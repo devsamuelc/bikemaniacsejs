@@ -6,27 +6,27 @@ module.exports = ({ bike, errors }) => {
     content: `
       <div class="columns is-centered">
         <div class="column is-half">
-          <h1 class="subtitle">Edit a Bike</h1>
+          <h1 class="subtitle">Editar Cadastro</h1>
 
           <form method="POST" enctype="multipart/form-data">
             <div class="field">
-              <label class="label">Title</label>
+              <label class="label">Nome</label>
               <input value="${
-                bike.title
-              }" class="input" placeholder="Title" name="title">
-              <p class="help is-danger">${getError(errors, "title")}</p>
+                bike.owner
+              }" class="input" placeholder="Nome" name="owner">
+              <p class="help is-danger">${getError(errors, "owner")}</p>
             </div>
             
             <div class="field">
-              <label class="label">Price</label>
+              <label class="label">Localidades</label>
               <input value="${
-                bike.price
-              }" class="input" placeholder="Price" name="price">
-              <p class="help is-danger">${getError(errors, "price")}</p>
+                bike.locals
+              }" class="input" placeholder="Localidades" name="locals">
+              <p class="help is-danger">${getError(errors, "locals")}</p>
             </div>
             
             <div class="field">
-              <label class="label">Image</label>            
+              <label class="label">Foto da sua Bike</label>            
               <input type="file" name="image" />
             </div>
             <br />
