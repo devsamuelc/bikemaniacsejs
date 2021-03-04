@@ -71,6 +71,12 @@ a {
   margin-top: 12vh;
 }
 
+.bikes {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3px;
+}
+
 #cadastro-title {
   font-weight: 800;
   font-size: 6rem;

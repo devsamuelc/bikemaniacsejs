@@ -16,15 +16,12 @@ module.exports = ({ content }) => {
           <nav class="navbar navbar-bottom">
             <div class="container navbar-container">
               <div>
-                <a href="/admin/bikes">
+                <a href="/admin">
                   <h3 class="title">Admin Panel</h3>
                 </a>
               </div>
               <div class="navbar-item">
                 <div class="navbar-buttons">
-                  <div class="navbar-item">
-                    <a href="/admin/bikes"><i class="fa fa-star"></i> Bikes</a>
-                  </div>
                 </div>
               </div>
             </div>

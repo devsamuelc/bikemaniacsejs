@@ -31,7 +31,7 @@ router.post(
 
     req.session.userId = user.id;
 
-    res.redirect('/admin/bikes');
+    res.redirect('/admin');
   }
 );
 
@@ -56,7 +56,7 @@ router.post(
     req.session.userId = user.id;
     console.log(req.session.userId);
 
-    res.redirect('/admin/bikes');
+    res.redirect('/admin');
   }
 );
 

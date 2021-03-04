@@ -14,7 +14,7 @@ const upload = multer({ storage: multer.memoryStorage() });
 
 const app = express();
 
-router.get("/admin/bikes", requireAuth, async (req, res) => {
+router.get("/admin", requireAuth, async (req, res) => {
   const bikes = await bikesRepo.getAll();
   res.send(bikesIndexTemplate({ bikes }));
 });
@@ -70,12 +70,12 @@ router.post("/admin/bikes/:id/edit"),
         return res.send('Could not find item');
       }
 
-      res.redirect('/admin/bikes');
+      res.redirect('/admin');
   };
 
   router.post('/admin/bikes/:id/delete', requireAuth, async (req, res) => {
     await bikesRepo.delete(req.params.id);
   
-    res.redirect('/admin/bikes');
+    res.redirect('/admin');
   })
 module.exports = router;

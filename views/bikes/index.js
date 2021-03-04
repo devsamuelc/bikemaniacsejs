@@ -4,7 +4,7 @@ module.exports = ({ bikes }) => {
   const renderedBikes = bikes
     .map(bike => {
       return `
-        <div class="column is-one-quarter">
+        <div class="column">
           <div class="card bike-card">
             <figure>
               <img src="data:image/png;base64, ${bike.image}"/>
